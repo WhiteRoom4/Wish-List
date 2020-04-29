@@ -1,0 +1,101 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+	box-sizing: border-box;
+  }
+  
+body {
+	margin: 0;
+	background-image: url(../images/dream.jpg);
+	background-position: center;
+/*cover主要用於背景圖小於所在的內容，而背景圖又不適合使用repeat，此時就可以採用cover的方式，使背景圖放大至內容的大小，
+但此方法容易使背景圖因放大而失真。*/
+	background-size: cover;
+	background-repeat: no-repeat;
+/*vh代表的是view height，也就是螢幕可視範圍高度的百分比。
+100vh就是整個螢幕的範圍，而且這個區塊會隨著瀏覽器的縮放而改變。*/	
+	height: 100vh; 
+  }
+
+.container {
+	width: 300px;
+	margin: 0 auto;
+	text-align: center;
+	background: #22a6b3;
+	border-radius: 10px;
+	margin-top: 30px;
+}
+
+.container h1 {
+	padding-top: 15px;
+	color: white;
+	font-size: 30px;
+}
+
+.container form {
+	padding: 20px 0;
+}
+
+.container li {
+	background: white;
+	position: relative;
+	padding: 3px;
+}
+
+.container li span {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	width: 25px;
+	color: white;
+	background: red;
+	cursor: pointer; /*鼠標變手型*/
+  }
